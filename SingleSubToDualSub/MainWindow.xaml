@@ -1,0 +1,24 @@
+﻿<Window x:Class="SingleSubToDualSub.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SingleSubToDualSub"
+        mc:Ignorable="d"
+        Title="DualSubMaker" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.537,0.552">
+       
+        <Label x:Name="enLab" Content="EnSub" HorizontalAlignment="Left" Margin="114,105,0,0" VerticalAlignment="Top" Height="28" Width="69" Background="#FFD9C8C8"/>
+        <Label x:Name="CnLab" Content="CnSub" HorizontalAlignment="Left" Margin="114,151,0,0" VerticalAlignment="Top" Background="#FFD9C8C8" Width="69" Height="28"/>
+        <Label x:Name="savePathLab" Content="保存位置" HorizontalAlignment="Left" Margin="114,198,0,0" VerticalAlignment="Top" Background="#FFD9C8C8" Width="69" Height="28"/>
+        <Label x:Name="saveFileNameLab" Content="文件名" HorizontalAlignment="Left" Margin="114,239,0,0" VerticalAlignment="Top" Background="#FFD9C8C8" Width="69" Height="28"/>
+
+        <TextBox x:Name="enPathTb" HorizontalAlignment="Left" Margin="199,105,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="28" Background="#FFE0CFCF" Grid.ColumnSpan="3" />
+        <TextBox x:Name="cnPathTb" HorizontalAlignment="Left" Margin="199,151,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="28" Background="#FFE0CFCF" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="merPathTb" HorizontalAlignment="Left" Margin="199,198,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="28" Background="#FFE0CFCF" Grid.ColumnSpan="3"/>
+        <TextBox x:Name="saveFileNameTb" HorizontalAlignment="Left" Margin="199,239,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="484" Height="28" Background="#FFE0CFCF" Grid.ColumnSpan="3"/>
+
+        <Button x:Name="combineBtn" Content="合并" HorizontalAlignment="Left" Margin="312,320,0,0" VerticalAlignment="Top" Height="36" Width="176" Click="combineBtn_Click" RenderTransformOrigin="1.109,0.394" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>
